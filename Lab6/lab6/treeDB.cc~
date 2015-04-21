@@ -1,0 +1,106 @@
+#include "treeNode.h"
+#include "DBentry.h"
+#include"treeDB.h"
+#include<iostream>
+using namespace std;
+DB::DB()
+{
+    root=NULL;
+    probesCount=0;
+}
+
+bool DB::insert(DBentry* newEntry)
+{
+    treeNode*curr;
+    bool check=true;
+
+    //insertHelper(root,newEntry);
+    curr=root;
+
+    if(root==NULL)
+    {
+        cout<<"ROOT IS NULL"<<endl;
+        treeNode *t=new treeNode(newEntry);
+        root=t;
+        check=true;
+    }
+
+    else if((root->getEntry()->getData())<(*newEntry->getData()))
+    {
+        cout<<"ROOT IS NOT NULL"<<endl;
+        //curr=root->getRightChild();
+        while(curr!=NULL)
+        {
+            if((*curr->getEntry()->getData())<(*newEntry->getData()))
+            {
+                curr=curr->getRightChild();
+            }
+            else
+            {
+                curr=curr->getLeftChild();
+            }
+        }
+
+        curr=new treeNode(newEntry);
+        //root->setLeftChild(curr);
+        check=true;
+    }
+
+    else if((*root->getEntry()->getData())>(*newEntry->getData()))
+    {
+         cout<<"ROOT IS NOT NULL"<<endl;
+        //set new leaf to left
+    }
+    return check;
+}
+
+bool DB::find(string* k, DBentry* & f_entry)
+{
+    return true;
+}
+
+bool DB::remove(string* k)
+{
+    return true;
+}
+
+void DB::printProbes()
+{
+    while(root!=NULL)
+        {
+         cout<<*root->getEntry()->getData()<<endl;
+         root=root->getRightChild();
+        }
+}
+
+void DB::printall()
+{
+
+}
+
+void DB::insertHelper(treeNode*curr,DBentry *newEntry)
+{
+        if(curr==NULL)
+        {
+            curr=new treeNode(newEntry);
+            cout<<"I AM INSERTING AT HEAD"<<endl;
+            //cout<<*curr->getEntry()->getData()<<endl;
+        }
+
+        else if((*curr->getEntry()->getData())<(*newEntry->getData()))
+        {
+            insertHelper(curr->getRightChild(),newEntry);
+            cout<<"I AM NOW GOING TO INSERT ON THE RIGHT"<<endl;
+        }
+        else
+        {
+            insertHelper(curr->getLeftChild(),newEntry);
+            cout<<"I AM NOW GOING TO INSERT ON THE LEFT"<<endl;
+        }
+}
+
+DB::~DB()
+{
+    probesCount--;
+}
+

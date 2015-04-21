@@ -1,0 +1,60 @@
+//Christian Sangle
+//ECE244 Lab 6: Trees
+//998158425
+//Trees they have leaves and have wood.
+
+    #include "Driver.h"
+    #include<iostream>
+    #include<cstdlib>
+    #include<string>
+    #include"DBentry.h"
+    #include"treeDB.h"
+    #include"treeNode.h"
+
+using namespace std;
+DB test;
+int main ()
+    {
+        process_input();
+        return(0);
+    }
+
+void handle_new()
+{
+    string key;
+    string data;
+
+    cin>>key;
+    cin>>data;
+    DBentry *node=new DBentry();
+
+    node->setKey(*key);
+    node->setData(*data);
+
+    //cout<<"THIS IS DATA!"<<*node->getData()<<endl;
+    test.insert(node);
+
+}
+void handle_locate()
+{
+    cout<<"SWEET"<<endl;
+}
+void handle_delete()
+{
+    cout<<"O HAI"<<endl;
+}
+void handle_printall()
+{
+    test.printall();
+    //cout<<"well herro"<<endl;
+
+}
+void handle_printprobes()
+{
+    test.printProbes();
+    //cout<<"We require more pylons"<<endl;
+}
+void handle_deleteall()
+{
+    cout<<"DELETE"<<endl;
+}

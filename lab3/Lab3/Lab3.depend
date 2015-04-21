@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1317780688 source:c:\users\christian\desktop\ece244\lab3\lab3\driver.cpp
+	<iostream>
+	<cstdlib>
+	<cstring>
+

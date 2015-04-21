@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1322167124 source:c:\lab6\lab6\main.cpp
+	"Driver.h"
+	<iostream>
+	<cstdlib>
+	<string>
+	"DBentry.h"
+	"treeDB.h"
+	"treeNode.h"
+
+1322153110 c:\lab6\lab6\driver.h
+
+1322153268 source:c:\lab6\lab6\driver.cpp
+	"Driver.h"
+	<iostream>
+	<cstdlib>
+	<string>
+
+1322241575 source:c:\lab6\lab6\treedb.cc
+	"treeNode.h"
+	"DBentry.h"
+	"treeDB.h"
+	<iostream>
+	<string>
+	<cstdlib>
+
+1321544910 c:\lab6\lab6\treenode.h
+	"DBentry.h"
+
+1321493736 c:\lab6\lab6\dbentry.h
+	<string>
+
+1322202833 c:\lab6\lab6\treedb.h
+	"treeNode.h"
+	"DBentry.h"
+
+1321818736 source:c:\lab6\lab6\dbentry.cpp
+	"DBentry.h"
+	<iostream>
+	<string>
+	<cstring>
+
+1321818198 source:c:\lab6\lab6\treenode.cpp
+	"treeNode.h"
+	"DBentry.h"
+

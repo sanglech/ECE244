@@ -1,0 +1,15 @@
+# define MAX_LEN 200
+#ifndef _PARSER_H_
+#	define _PARSER_H_
+	using namespace std;
+
+	void new_emplnum(int emp_0);
+	void locate_emplnum(int emp_1);
+	void updatename(int emp_2, char*lname,char*fname);
+	void updatedivision_emplnum(int emp_3, int division);
+	void delete_emplnum(int emp_4);
+	void printall();
+	void deleteall();
+#endif
+
+

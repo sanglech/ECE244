@@ -1,0 +1,10 @@
+#include "parser.h"
+
+#ifndef __MAIN_H__
+#	define __MAIN_H__
+
+	void driver (char*cmnd);
+	void start_parse();
+	int process_input();
+
+#endif

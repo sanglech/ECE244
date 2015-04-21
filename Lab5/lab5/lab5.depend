@@ -1,0 +1,59 @@
+# depslib dependency file v1.0
+1320895136 source:c:\lab5\lab5\resistor.cpp
+	"Resistor.h"
+	<iostream>
+	<string.h>
+	<stdio.h>
+
+1320895149 c:\lab5\lab5\resistor.h
+	<iostream>
+	<sstream>
+	<cstring>
+
+1320896067 source:c:\lab5\lab5\resistorlist.cpp
+	"Resistorlist.h"
+	"Resistor.h"
+	<iostream>
+
+1320895327 c:\lab5\lab5\resistorlist.h
+	<iostream>
+	"Resistor.h"
+
+1320889454 source:c:\lab5\lab5\strip.cpp
+	"Strip.h"
+	"Resistor.h"
+	<iostream>
+	<string.h>
+	<stdio.h>
+	<sstream>
+
+1320889490 c:\lab5\lab5\strip.h
+	"Resistor.h"
+
+1320895931 source:c:\lab5\lab5\main.cpp
+	"Driver.h"
+	"Resistor.h"
+	"Strip.h"
+	"StripList.h"
+	<iostream>
+	<cstdlib>
+	<cstring>
+
+1320886865 c:\lab5\lab5\driver.h
+
+1320887104 source:c:\lab5\lab5\driver.cpp
+	"Driver.h"
+	<iostream>
+	<cstdlib>
+	<cstring>
+
+1320896095 source:c:\lab5\lab5\striplist.cpp
+	"StripList.h"
+	"Strip.h"
+	"ResistorList.h"
+
+1320895682 c:\lab5\lab5\striplist.h
+	<iostream>
+	"Resistor.h"
+	"Strip.h"
+

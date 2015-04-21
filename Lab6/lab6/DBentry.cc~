@@ -1,0 +1,8 @@
+#include "DBentry.h"
+#include<iostream>
+#include<string>
+
+DBentry::DBentry()
+{
+  
+}
